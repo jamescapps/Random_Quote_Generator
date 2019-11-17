@@ -1,46 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  background-color: white;
+  width: 800px;
+  height: 400px;
+  padding: 40px 50px;
+}
+
+#quote-box #text {
+  font-size: 3.0em;
+  text-align: center;
+  color: black;
+}
+
+#quote-box #author {
+  font-size: 2.0em;
+  color: black;
+  float: right;
+}
+
+#quote-box .buttons {
+  padding: 80px 180px 60px 180px;
+  margin-top: 100px;
+}
+
+#quote-box .buttons #tweet-quote {
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#quote-box .buttons #new-quote {
+  float: right;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 850px) {
   #quote-box {
-    background-color: white;
-    width: 800px;
+    width: 500px;
     height: 400px;
-    padding:40px 50px;
-    #text {
-      font-size: 3.0em;
-      text-align: center;
-      color: black;
-    }
-    #author {
-      font-size: 2.0em;
-      color: black;
-      float: right;
-    }
-    .buttons {
-      padding: 80px 180px 60px 180px;
-      margin-top: 100px;
-     
-      #tweet-quote {
-        float: left;
-        padding: 10px;
-        cursor: pointer;
-       }
-      #new-quote {
-        float: right;
-        border: 2px solid black;
-      }
-    }
   }
-  
+  #quote-box #text {
+    font-size: 1.75em;
+  }
+  #quote-box #author {
+    font-size: 2.em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #quote-box {
+    width: 300px;
+    height: 200px;
+  }
+  #quote-box #text {
+    font-size: 1em;
+  }
+  #quote-box #author {
+    font-size: 1.25em;
+  }
+}
   
