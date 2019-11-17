@@ -63,6 +63,12 @@ body {
   #quote-box #author {
     font-size: 2.em;
   }
+  #quote-box .buttons #new-quote {
+    float: left;
+  }
+  #quote-box .buttons #tweet-quote {
+    float: left;
+  }
 }
 
 @media only screen and (max-width: 420px) {
