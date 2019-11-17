@@ -51,4 +51,29 @@ body {
   float: right;
   border: 2px solid black;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 850px) {
+  #quote-box {
+    width: 500px;
+    height: 400px;
+  }
+  #quote-box #text {
+    font-size: 1.75em;
+  }
+  #quote-box #author {
+    font-size: 2.em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #quote-box {
+    width: 300px;
+    height: 200px;
+  }
+  #quote-box #text {
+    font-size: 1em;
+  }
+  #quote-box #author {
+    font-size: 1.25em;
+  }
+}
